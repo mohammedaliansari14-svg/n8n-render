@@ -1,0 +1,5 @@
+# Ignore local n8n data
+.n8n/
+node_modules/
+.env
+*.log
