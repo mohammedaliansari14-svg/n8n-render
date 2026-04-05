@@ -29,15 +29,15 @@ services:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
-        sync: false
+        value: "admin"
       - key: N8N_BASIC_AUTH_PASSWORD
-        generateValue: true
+        value: "changeme123"
       - key: WEBHOOK_URL
         value: https://n8n-YOUR_SERVICE_NAME.onrender.com/
       - key: GENERIC_TIMEZONE
         value: UTC
       - key: N8N_ENCRYPTION_KEY
-        generateValue: true
+        value: "replace_with_random_string"
     healthCheckPath: /healthz
     disk:
       name: n8n-data
